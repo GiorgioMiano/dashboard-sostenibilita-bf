@@ -19,6 +19,7 @@ html, body {
     color:var(--fg); 
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
     scroll-behavior: smooth;
+    min-width: fit-content;
 }
 
 a { 
@@ -33,6 +34,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -333,4 +336,5 @@ footer > div > img {
 
 .scroll-down .arrow {
   animation: arrowBounce 2s infinite;
+
 }
