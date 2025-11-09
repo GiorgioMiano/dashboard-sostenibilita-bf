@@ -1,0 +1,336 @@
+:root {
+    --bg: #0b1f18;
+    --fg: #eaf4ef;
+    --muted: #a7c4b5;
+    --brand: #4fd1a1;
+    --card: #132a23;
+    --card-2: #0f241e;
+    --accent: #a1ffb0;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, body { 
+    margin:0; 
+    padding:0; 
+    background:var(--bg); 
+    color:var(--fg); 
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    scroll-behavior: smooth;
+}
+
+a { 
+    color: var(--accent); 
+    text-decoration:none; 
+}
+
+nav {
+    background-color: #102a22;
+    border-bottom:1px solid #15392f;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display:flex; 
+    gap:24px; 
+    list-style:none; 
+    margin:0; 
+    padding:0; 
+    align-items:center; 
+    justify-content:center;
+}
+
+nav a { 
+    color:var(--fg); 
+    font-weight:600; 
+}
+
+nav a:hover { 
+    color:var(--accent); 
+}
+
+header.hero {
+    position: relative; 
+    overflow:hidden; 
+    background: linear-gradient(160deg, rgba(11,31,24,0.8), rgba(18,53,44,0.9)), url('../img/hero.png') center/cover no-repeat;
+    padding: 100px 20px;
+    color: #eaf4ef;
+    border-bottom: 1px solid #15392f;
+    height: 100vh;
+}
+
+.container { 
+    width: min(1100px, 100%); 
+    margin: 0 auto; 
+}
+
+.badge { 
+    display:inline-flex; 
+    gap:8px; 
+    align-items:center; 
+    padding:6px 10px; 
+    border-radius:999px; 
+    background:#10342a; 
+    color:var(--muted); 
+    font-weight:600; 
+    font-size:12px; 
+    letter-spacing:.3px; 
+    text-transform:uppercase; 
+    border:1px solid #1a473a; 
+}
+
+.hero h1 { 
+    margin:14px 0 10px; 
+    font-size: clamp(28px, 6vw, 44px); 
+    line-height:1.1; 
+    letter-spacing:.2px; 
+}
+
+.hero p.lead { 
+    color:var(--muted); 
+    max-width: 70ch; 
+    font-size: clamp(14px, 2.5vw, 18px); 
+}
+
+.cta { 
+    display:flex; 
+    gap:12px; 
+    margin-top:24px; 
+    flex-wrap:wrap; 
+}
+
+.btn { 
+    appearance:none; 
+    border:1px solid #1a4a3d; 
+    background: linear-gradient(180deg, #174136, #12352c); 
+    color:var(--fg); 
+    padding:12px 16px; 
+    border-radius:14px; 
+    font-weight:700; 
+    text-decoration:none; 
+    transition:.2s transform ease, .2s background ease; 
+}
+
+.btn:hover { 
+    transform: translateY(-2px); 
+    background: linear-gradient(180deg, #1b5042, #154336); 
+}
+
+.btn.secondary { 
+    background: #0f2a23; 
+    color: var(--muted); 
+}
+
+.grid { 
+    display:grid; 
+    gap:16px; 
+}
+
+.kpis { 
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); 
+    margin: 34px 0; 
+}
+
+.card, .item {
+  background: var(--card);
+  border: 1px solid #1d5545;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.card:hover, .item:hover {
+  background: #1a4034;
+  transform: translateY(-3px);
+}
+
+.card h3 { margin:0 0 8px; font-size:18px; }
+
+.filetype {
+  background: #4fd1a1;
+  color: #0b1f18;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.hero-header h1 {
+  font-size: clamp(24px, 5vw, 42px);
+  margin: 0;
+  color: var(--fg);
+  letter-spacing: 0.5px;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-logo img {
+  width: clamp(160px, 25vw, 280px);
+  height: auto;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
+}
+
+.stat { 
+    font-size: clamp(22px, 3vw, 28px); 
+    font-weight:800; 
+}
+
+.small { 
+    color: var(--muted); 
+    font-size: 13px; 
+}
+
+.section { 
+    padding: 40px 20px; 
+    border-top:1px solid #15392f; 
+    background: linear-gradient(180deg, var(--card-2), transparent 60%); 
+}
+
+.section p {
+  color: #d6ede1;
+  line-height: 1.7;
+  max-width: 75ch;
+  margin-bottom: 16px;
+}
+
+.section h2 { 
+    font-size: clamp(24px, 5vw, 32px);
+    color: #a1ffb0;
+    letter-spacing: 0.3px;
+    border-left: 4px solid var(--brand);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.section::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  margin: 40px auto 0;
+  background: linear-gradient(to right, transparent, var(--brand), transparent);
+  opacity: 0.3;
+}
+
+.pill { 
+    display:inline-block; 
+    margin-right:8px; 
+    margin-bottom:8px; 
+    padding:6px 10px; 
+    border-radius:999px; 
+    background: #10342a; 
+    border:1px solid #1a473a; 
+    color:var(--muted); 
+    font-weight:600; 
+    font-size:12px; 
+}
+
+ul.clean { 
+    list-style:none; 
+    padding:0; 
+    margin:0; 
+    display:grid; 
+    gap:8px; 
+}
+
+ul.clean li.item strong {
+  color: var(--accent);
+}
+
+li.item { 
+    background: var(--card); 
+    border:1px solid #1a473a; 
+    border-radius:14px; 
+    padding:14px; 
+}
+
+footer { 
+    padding: 40px 20px; 
+    color: var(--muted); 
+    border-top:1px solid #15392f; 
+}
+
+footer > div.container { 
+    text-align: center;
+}
+
+footer > div > img { 
+    width:120px; 
+    opacity:0.8; 
+    margin-bottom:10px; 
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.15)); 
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-down:hover {
+  opacity: 1;
+}
+
+.scroll-down .arrow {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: var(--accent);
+  position: relative;
+  margin: 0 auto;
+}
+
+.scroll-down .arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+@keyframes arrowBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+.scroll-down .arrow {
+  animation: arrowBounce 2s infinite;
+}
