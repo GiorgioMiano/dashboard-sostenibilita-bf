@@ -1,46 +1,69 @@
+/* 
+====================================================
+    VARIABILI GLOBALI E COLORI TEMATICI
+====================================================
+*/
+
 :root {
-    --bg: #0b1f18;
-    --fg: #eaf4ef;
-    --muted: #a7c4b5;
-    --brand: #4fd1a1;
-    --card: #132a23;
-    --card-2: #0f241e;
-    --accent: #a1ffb0;
+    /* Colori principali in linea con l'identità visiva “green” del gruppo BF */
+    --bg: #0b1f18;       /* Colore di sfondo principale – verde scuro */
+    --fg: #eaf4ef;       /* Colore del testo principale – verde chiaro */
+    --muted: #a7c4b5;    /* Colore per testi secondari */
+    --brand: #4fd1a1;    /* Colore d'accento principale, caratteristico del brand */
+    --card: #132a23;     /* Sfondo delle card */
+    --card-2: #0f241e;   /* Colore di transizione per sezioni */
+    --accent: #a1ffb0;   /* Colore di accento per link e dettagli */
 }
 
+/* 
+====================================================
+    RESET E STILI DI BASE
+====================================================
+*/
+
+/* Applica box-sizing globale per una gestione coerente dei padding e border */
 * { 
     box-sizing: border-box; 
 }
 
+/* Impostazioni generali del documento */
 html, body { 
     margin:0; 
     padding:0; 
-    background:var(--bg); 
-    color:var(--fg); 
+    background:var(--bg);   /* Sfondo uniforme */
+    color:var(--fg);        /* Testo principale */
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-    scroll-behavior: smooth;
-    min-width: fit-content;
+    scroll-behavior: smooth; /* Abilita lo scorrimento fluido */
+    min-width: fit-content;  /* Evita overflow orizzontale indesiderato */
 }
 
+/* Stile per i link */
 a { 
     color: var(--accent); 
     text-decoration:none; 
 }
 
+/* 
+====================================================
+    NAVBAR
+====================================================
+*/
+
 nav {
-    background-color: #102a22;
+    background-color: #102a22;      /* Verde molto scuro per differenziare la barra */
     border-bottom:1px solid #15392f;
     padding: 12px 20px;
-    position: sticky;
+    position: sticky;                /* Resta visibile durante lo scroll */
     top: 0;
-    z-index: 1000;
+    z-index: 1000;                   /* Assicura che resti sopra tutti gli elementi */
     display: flex;
     justify-content: space-evenly;
 }
 
+/* Lista orizzontale delle voci di menu */
 nav ul {
     display:flex; 
-    gap:24px; 
+    gap:24px;                        /* Spazio uniforme tra le voci */
     list-style:none; 
     margin:0; 
     padding:0; 
@@ -48,30 +71,41 @@ nav ul {
     justify-content:center;
 }
 
+/* Link del menu */
 nav a { 
     color:var(--fg); 
     font-weight:600; 
 }
 
+/* Effetto hover per migliorare l’interazione */
 nav a:hover { 
     color:var(--accent); 
 }
 
+/* 
+====================================================
+    HERO SECTION
+====================================================
+*/
+
 header.hero {
     position: relative; 
     overflow:hidden; 
+    /* Immagine di sfondo con overlay scuro per contrasto testo */
     background: linear-gradient(160deg, rgba(11,31,24,0.8), rgba(18,53,44,0.9)), url('../img/hero.png') center/cover no-repeat;
     padding: 100px 20px;
     color: #eaf4ef;
     border-bottom: 1px solid #15392f;
-    height: 100vh;
+    height: 100vh;                    /* Occupazione verticale completa */
 }
 
+/* Contenitore centrale per limitare la larghezza */
 .container { 
     width: min(1100px, 100%); 
     margin: 0 auto; 
 }
 
+/* Badge decorativo con sfondo e bordi tondeggianti */
 .badge { 
     display:inline-flex; 
     gap:8px; 
@@ -87,25 +121,34 @@ header.hero {
     border:1px solid #1a473a; 
 }
 
+/* Titolo principale della hero */
 .hero h1 { 
     margin:14px 0 10px; 
-    font-size: clamp(28px, 6vw, 44px); 
+    font-size: clamp(28px, 6vw, 44px); /* Adattivo a seconda dello schermo */
     line-height:1.1; 
     letter-spacing:.2px; 
 }
 
+/* Paragrafo introduttivo */
 .hero p.lead { 
     color:var(--muted); 
-    max-width: 70ch; 
+    max-width: 70ch;                  /* Limita la lunghezza per leggibilità */
     font-size: clamp(14px, 2.5vw, 18px); 
 }
 
+/* Pulsanti principali (call to action) */
 .cta { 
     display:flex; 
     gap:12px; 
     margin-top:24px; 
     flex-wrap:wrap; 
 }
+
+/* 
+====================================================
+    BUTTONS
+====================================================
+*/
 
 .btn { 
     appearance:none; 
@@ -119,25 +162,40 @@ header.hero {
     transition:.2s transform ease, .2s background ease; 
 }
 
+/* Effetto hover per dare feedback visivo */
 .btn:hover { 
     transform: translateY(-2px); 
     background: linear-gradient(180deg, #1b5042, #154336); 
 }
 
+/* Versione secondaria del bottone */
 .btn.secondary { 
     background: #0f2a23; 
     color: var(--muted); 
 }
+
+/* 
+====================================================
+    GRID SYSTEM
+====================================================
+*/
 
 .grid { 
     display:grid; 
     gap:16px; 
 }
 
+/* Layout adattivo per i KPI */
 .kpis { 
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); 
     margin: 34px 0; 
 }
+
+/* 
+====================================================
+    CARDS E LISTE
+====================================================
+*/
 
 .card, .item {
   background: var(--card);
@@ -147,13 +205,20 @@ header.hero {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, background 0.3s ease;
 }
+
+/* Effetto sollevamento al passaggio del mouse */
 .card:hover, .item:hover {
   background: #1a4034;
   transform: translateY(-3px);
 }
 
-.card h3 { margin:0 0 8px; font-size:18px; }
+/* Titolo card */
+.card h3 { 
+    margin:0 0 8px; 
+    font-size:18px; 
+}
 
+/* Etichetta PDF */
 .filetype {
   background: #4fd1a1;
   color: #0b1f18;
@@ -164,6 +229,12 @@ header.hero {
   margin-left: 6px;
 }
 
+/* 
+====================================================
+    STRUTTURA HERO INTERNA
+====================================================
+*/
+
 .hero-header {
   display: flex;
   align-items: center;
@@ -173,13 +244,7 @@ header.hero {
   margin-bottom: 24px;
 }
 
-.hero-header h1 {
-  font-size: clamp(24px, 5vw, 42px);
-  margin: 0;
-  color: var(--fg);
-  letter-spacing: 0.5px;
-}
-
+/* Logo + titolo */
 .hero-logo {
   display: flex;
   justify-content: center;
@@ -188,11 +253,18 @@ header.hero {
   margin-bottom: 20px;
 }
 
+/* Logo con effetto leggero di ombra */
 .hero-logo img {
   width: clamp(160px, 25vw, 280px);
   height: auto;
   filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
 }
+
+/* 
+====================================================
+    TESTI E SEZIONI
+====================================================
+*/
 
 .stat { 
     font-size: clamp(22px, 3vw, 28px); 
@@ -204,12 +276,14 @@ header.hero {
     font-size: 13px; 
 }
 
+/* Ogni sezione separata da bordo e gradiente */
 .section { 
     padding: 40px 20px; 
     border-top:1px solid #15392f; 
     background: linear-gradient(180deg, var(--card-2), transparent 60%); 
 }
 
+/* Paragrafi con colore più chiaro e maggiore leggibilità */
 .section p {
   color: #d6ede1;
   line-height: 1.7;
@@ -217,6 +291,7 @@ header.hero {
   margin-bottom: 16px;
 }
 
+/* Titoli di sezione */
 .section h2 { 
     font-size: clamp(24px, 5vw, 32px);
     color: #a1ffb0;
@@ -226,6 +301,7 @@ header.hero {
     margin-bottom: 20px;
 }
 
+/* Linea decorativa inferiore */
 .section::after {
   content: "";
   display: block;
@@ -236,19 +312,7 @@ header.hero {
   opacity: 0.3;
 }
 
-.pill { 
-    display:inline-block; 
-    margin-right:8px; 
-    margin-bottom:8px; 
-    padding:6px 10px; 
-    border-radius:999px; 
-    background: #10342a; 
-    border:1px solid #1a473a; 
-    color:var(--muted); 
-    font-weight:600; 
-    font-size:12px; 
-}
-
+/* Lista “pulita” (senza bullet) */
 ul.clean { 
     list-style:none; 
     padding:0; 
@@ -257,16 +321,24 @@ ul.clean {
     gap:8px; 
 }
 
+/* Evidenziazione dei nomi aziendali */
 ul.clean li.item strong {
   color: var(--accent);
 }
 
+/* Elementi lista */
 li.item { 
     background: var(--card); 
     border:1px solid #1a473a; 
     border-radius:14px; 
     padding:14px; 
 }
+
+/* 
+====================================================
+    FOOTER
+====================================================
+*/
 
 footer { 
     padding: 40px 20px; 
@@ -278,12 +350,19 @@ footer > div.container {
     text-align: center;
 }
 
+/* Logo nel footer */
 footer > div > img { 
     width:120px; 
     opacity:0.8; 
     margin-bottom:10px; 
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.15)); 
 }
+
+/* 
+====================================================
+    FRECCIA DI SCORRIMENTO
+====================================================
+*/
 
 .scroll-down {
   position: absolute;
@@ -297,10 +376,12 @@ footer > div > img {
   transition: opacity 0.3s ease;
 }
 
+/* Hover aumenta la visibilità */
 .scroll-down:hover {
   opacity: 1;
 }
 
+/* Struttura della freccia */
 .scroll-down .arrow {
   display: block;
   width: 3px;
@@ -310,6 +391,7 @@ footer > div > img {
   margin: 0 auto;
 }
 
+/* Punta della freccia */
 .scroll-down .arrow::after {
   content: "";
   position: absolute;
@@ -322,6 +404,7 @@ footer > div > img {
   border-bottom: 3px solid var(--accent);
 }
 
+/* Animazione di rimbalzo */
 @keyframes arrowBounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -334,11 +417,7 @@ footer > div > img {
   }
 }
 
+/* Applica animazione */
 .scroll-down .arrow {
   animation: arrowBounce 2s infinite;
-
 }
-
-
-
-
