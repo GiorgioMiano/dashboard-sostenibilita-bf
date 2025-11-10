@@ -12,14 +12,6 @@
     box-sizing: border-box; 
 }
 
-html {
-    width: 100vw;
-}
-
-body {
-    width: 100%;
-}
-
 html, body { 
     margin:0; 
     padding:0; 
@@ -346,6 +338,7 @@ footer > div > img {
   animation: arrowBounce 2s infinite;
 
 }
+
 
 
 
