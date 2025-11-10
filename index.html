@@ -1,20 +1,35 @@
 <!doctype html>
+ 
 <html lang="it">
     <head>
+        <!-- Definizione del tipo di documento e lingua principale -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <!-- Titolo mostrato nella scheda del browser -->
         <title>BF S.p.A. - Dashboard di Sostenibilità</title>
+        
+        <!-- Descrizione per i motori di ricerca (SEO) -->
         <meta name="description" content="Pagina per scaricare i report di sostenibilità e scoprire le iniziative ESG del Gruppo BF (Bonifiche Ferraresi) nel settore primario."/>
+
+        <!-- Collegamenti ai font esterni (Google Fonts) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+        <!-- Collegamento al foglio di stile principale -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Icona (favicon) visibile nella scheda del browser -->
         <link rel="icon" type="x-icon" href="assets/img/favicon.png">
     </head>
 
     <body>
+        
+        <!-- NAVBAR: menu di navigazione principale, sempre visibile in alto -->
         <nav role="navigation">
             <ul>
+                <!-- Collegamenti interni alle sezioni principali -->
                 <li><a href="#">Home</a></li>
                 <li><a href="#indicatori">Indicatori ESG</a></li>
                 <li><a href="#chisiamo">Chi siamo</a></li>
@@ -22,31 +37,50 @@
                 <li><a href="#report">Report</a></li>
             </ul>
         </nav>
-
+        
+        <!-- HERO SECTION: sezione introduttiva a pieno schermo -->
         <header class="hero" role="banner">
             <div class="container">
                 <div class="hero-header">
+                    <!-- Badge introduttivo per identificare il settore -->
                     <span class="badge" aria-label="Settore primario">🌾 Settore primario • Agricoltura</span>
+
+                    <!-- Logo aziendale + titolo -->
                     <div class="hero-logo">
                         <img src="assets/img/bf-spa-logo.svg" alt="Logo BF S.p.A.">
                         <h1>Dashboard di Sostenibilità</h1>
                     </div> 
+
+                    <!-- Testo introduttivo (lead) -->
                     <p class="lead">Sintesi degli indicatori ESG del Gruppo BF (Bonifiche Ferraresi) e accesso ai documenti ufficiali. La pagina è pensata per essere chiara, accessibile e facilmente consultabile.</p>
+                    
+                    <!-- Pulsanti principali: call to action -->
                     <div class="cta" role="group" aria-label="Azioni principali">
+                        
+                        <!-- Link diretto all’ultimo report in formato PDF -->
                         <a class="btn" href="assets/pdf/2023.pdf" target="_blank" rel="noopener">Scarica ultimo report<span class="filetype">PDF</span></a>
+                        
+                        <!-- Link al sito ufficiale del gruppo -->
                         <a class="btn secondary" href="https://www.bfspa.it/it/il-gruppo/sostenibilita" target="_blank" rel="noopener">Sostenibilità sul sito ufficiale BF</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Freccia animata che invita a scorrere verso il basso -->
             <a href="#contenuto" class="scroll-down" aria-label="Scorri verso il basso">
                 <span class="arrow"></span>
             </a>
         </header>
 
+        <!-- CONTENUTO PRINCIPALE -->
         <main id="contenuto" class="container" role="main">
+            
+            <!-- Sezione: indicatori ESG con layout a griglia -->
             <section id="indicatori" class="section" aria-labelledby="kpi-title">
             <h2 id="kpi-title">Indicatori di sostenibilità</h2>
             <p class="small">Dati provenienti dall'ultima Dichiarazione Non Finanziaria (2023) disponibile.</p>
+
+                <!-- Cards con dati chiave -->
                 <div class="grid kpis">
                     <article class="card"><h3>Emissioni dirette (Scope 1)</h3><div class="stat">18.814 <span class="small">tCO₂e</span></div></article>
                     <article class="card"><h3>Emissioni indirette (Scope 2)</h3><div class="stat">18.553 <span class="small">tCO₂e</span></div></article>
@@ -55,6 +89,7 @@
                 </div>
             </section>
 
+            <!-- Sezione: chi siamo -->
             <section id="chisiamo" class="section">
             <div class="container">
                 <h2>Chi siamo</h2>
@@ -69,6 +104,7 @@
             </div>
             </section>
 
+            <!-- Sezione: struttura societaria -->
             <section id="struttura" class="section">
                 <div class="container">
                     <h2>Struttura societaria</h2>
@@ -90,9 +126,14 @@
                 </div>
             </section>
 
+            <!-- Sezione: download report -->
             <section class="section" aria-labelledby="report">
                 <h2 id="report">Download report di sostenibilità</h2>
+
+                <!-- Layout a griglia per i link ai PDF -->
                 <div class="grid kpis" role="list">
+
+                    <!-- Ogni card rappresenta un anno -->
                     <a class="card" role="listitem" href="assets/pdf/2023.pdf" target="_blank" rel="noopener">
                         <h3>Bilancio di Sostenibilità 2023<span class="filetype">PDF</span></h3>
                         <p class="small">Dichiarazione Non Finanziaria 2023.</p>
@@ -121,6 +162,7 @@
             </section>
         </main>
 
+        <!-- FOOTER: informazioni finali e crediti -->
         <footer role="contentinfo">
             <div class="container">
                 <img src="assets/img/bf-spa-logo.svg" alt="Logo BF S.p.A.">
@@ -137,6 +179,7 @@
         </footer>
     </body>
 </html>
+
 
 
 
