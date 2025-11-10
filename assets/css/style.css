@@ -12,6 +12,14 @@
     box-sizing: border-box; 
 }
 
+html {
+    width: 100vw;
+}
+
+body {
+    width: 100%;
+}
+
 html, body { 
     margin:0; 
     padding:0; 
@@ -20,7 +28,6 @@ html, body {
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
     scroll-behavior: smooth;
     min-width: fit-content;
-    width: 100vw;
 }
 
 a { 
@@ -339,5 +346,6 @@ footer > div > img {
   animation: arrowBounce 2s infinite;
 
 }
+
 
 
