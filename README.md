@@ -97,12 +97,16 @@ dashboard-sostenibilita-bf/
 
 ## 🧰 Come visualizzare il progetto
 
+### In locale
 1. Clona o scarica il repository:
    ```bash
    git clone https://github.com/tuonomeutente/dashboard-sostenibilita-bf.git
    ```
 2. Apri il file `index.html` nel browser.  
 3. Tutte le risorse (immagini, CSS e PDF) sono locali, a parte i **font Google**, che richiedono una connessione internet per poter essere utilizzati.
+
+### In rete
+La pagina è visibile all'indirizzo https://giorgiomiano.github.io/dashboard-sostenibilita-bf
 
 ---
 
