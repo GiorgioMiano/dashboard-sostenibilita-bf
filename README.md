@@ -1,4 +1,4 @@
-# 🌿 Dashboard di Sostenibilità del Gruppo BF S.p.A.
+# Dashboard di Sostenibilità del Gruppo BF S.p.A.
 
 **Dashboard web realizzata in HTML5 e CSS3 per la divulgazione e il download dei report di sostenibilità del Gruppo BF S.p.A. (Bonifiche Ferraresi).**
 
@@ -6,7 +6,7 @@ Il progetto è stato sviluppato nell’ambito del Project Work n. 17 - “Svilup
 
 ---
 
-## 📖 Descrizione del progetto
+## Descrizione del progetto
 
 La dashboard ha lo scopo di rendere accessibili, chiari e consultabili i **report di sostenibilità (DNF 2018–2023)** del Gruppo BF S.p.A., principale operatore agricolo italiano.  
 
@@ -14,7 +14,7 @@ Il sito è stato progettato come **interfaccia single-page responsive**, con un 
 
 ---
 
-## 🧩 Tecnologie utilizzate
+## Tecnologie utilizzate
 
 - **HTML5** – struttura semantica e accessibile  
 - **CSS3** – layout responsive (Flexbox e Grid Layout)  
@@ -25,7 +25,7 @@ Il sito è stato progettato come **interfaccia single-page responsive**, con un 
 
 ---
 
-## 📁 Struttura del progetto
+## Struttura del progetto
 
 ```
 dashboard-sostenibilita-bf/
@@ -49,27 +49,27 @@ dashboard-sostenibilita-bf/
 
 ---
 
-## 🖥️ Funzionalità principali
+## Funzionalità principali
 
-✅ Sezioni tematiche:
+Sezioni tematiche:
 - **Hero section** con logo BF S.p.A. e link al download del report più recente
 - **Indicatori di sostenibilità 2023** (Emissioni, Acqua, Energia)
 - **Chi siamo**, sezione con una breve introduzione della realtà dell'azienda
 - **Struttura societaria**, rappresentante le società partecipate specializzate che formano il modello multi-business del gruppo
 - **Download diretto dei report DNF 2018–2023**
 
-✅ Design responsive  
+Design responsive  
 - Layout fluido ottimizzato per desktop, tablet e mobile  
 - Navigazione con ancore e scorrimento fluido (`scroll-behavior: smooth`)  
 - Navbar sticky sempre visibile in alto  
 
-✅ Esperienza utente e leggerezza  
+Esperienza utente e leggerezza  
 - Codice ottimizzato, carico rapido e basso impatto energetico  
 - Palette cromatica ispirata alla sostenibilità (verde acqua, bianco, verde scuro)  
 
 ---
 
-## 🌱 Obiettivi del progetto
+## Obiettivi del progetto
 
 - Promuovere la **trasparenza** e la **diffusione dei report ESG** del settore primario  
 - Dimostrare l’applicazione di **competenze tecniche (HTML/CSS)** e **manageriali (comunicazione e sostenibilità)**  
@@ -77,14 +77,14 @@ dashboard-sostenibilita-bf/
 
 ---
 
-## 🧠 Materie di riferimento
+## Materie di riferimento
 
 - **Tecnologie Web** → sviluppo del codice HTML5, CSS3
 - **Strategia, organizzazione e marketing** → analisi del contesto aziendale e comunicazione della sostenibilità  
 
 ---
 
-## 📊 Dati principali dal Bilancio di Sostenibilità 2023 (DNF BF S.p.A.)
+## Dati principali dal Bilancio di Sostenibilità 2023 (DNF BF S.p.A.)
 
 | Indicatore | Valore | Unità | Fonte |
 |-------------|---------|-------|-------|
@@ -95,7 +95,7 @@ dashboard-sostenibilita-bf/
 
 ---
 
-## 🧰 Come visualizzare il progetto
+## Come visualizzare il progetto
 
 ### In locale
 1. Clona o scarica il repository:
@@ -110,7 +110,7 @@ La pagina è visibile all'indirizzo https://giorgiomiano.github.io/dashboard-sos
 
 ---
 
-## 👤 Autore
+## Autore
 
 **Giorgio Miano**  
 Matricola: `0312300161`  
@@ -123,14 +123,15 @@ Project Work n. 17 – Sviluppo di una pagina web per il download dei report di 
 
 ---
 
-## ⚖️ Crediti
+## Crediti
 
 Tutti i dati, loghi e materiali visivi sono tratti dai report ufficiali di **BF S.p.A. (Bonifiche Ferraresi)**.  
 I relativi contenuti restano di proprietà esclusiva dell’azienda.
 
 ---
 
-## 💬 Contatti
+## Contatti
 
-📧 [giorgiomiano05@email.com](mailto:giorgiomiano05@email.com)  
-🔗 [www.bfspa.it](https://www.bfspa.it)
+[giorgiomiano05@email.com](mailto:giorgiomiano05@email.com) - personale
+[giorgio.miano_3531@studenti.unipegaso.it](mailto:giorgio.miano_3531@studenti.unipegaso.it) - istituzionale
+[www.bfspa.it](https://www.bfspa.it) - sito ufficiale del gruppo BF. S.p.A.
