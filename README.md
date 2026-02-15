@@ -132,6 +132,6 @@ I relativi contenuti restano di proprietà esclusiva dell’azienda.
 
 ## Contatti
 
-[giorgiomiano05@email.com](mailto:giorgiomiano05@email.com) - personale
-[giorgio.miano_3531@studenti.unipegaso.it](mailto:giorgio.miano_3531@studenti.unipegaso.it) - istituzionale
+[giorgiomiano05@email.com](mailto:giorgiomiano05@email.com) - mail personale<br/> 
+[giorgio.miano_3531@studenti.unipegaso.it](mailto:giorgio.miano_3531@studenti.unipegaso.it) - mail istituzionale<br/> 
 [www.bfspa.it](https://www.bfspa.it) - sito ufficiale del gruppo BF. S.p.A.
