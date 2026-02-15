@@ -10,7 +10,7 @@ Il progetto è stato sviluppato nell’ambito del Project Work n. 17 - “Svilup
 
 La dashboard ha lo scopo di rendere accessibili, chiari e consultabili i **report di sostenibilità (DNF 2018–2023)** del Gruppo BF S.p.A., principale operatore agricolo italiano.  
 
-Il sito è stato progettato come **interfaccia single-page responsive**, con un design moderno e minimalista che rispecchia i valori di trasparenza e responsabilità ambientale del Gruppo.
+Il sito è stato progettato come interfaccia **single-page responsive**, con un design moderno e minimalista che rispecchia i valori di trasparenza e responsabilità ambientale del Gruppo.
 
 ---
 
@@ -18,9 +18,8 @@ Il sito è stato progettato come **interfaccia single-page responsive**, con un 
 
 - **HTML5** – struttura semantica e accessibile  
 - **CSS3** – layout responsive (Flexbox e Grid Layout)  
-- **Google Fonts – Inter**  
-- **Icone SVG ottimizzate**  
-- **Favicon personalizzata**  
+- Utilizzo di **Google Fonts** – **Inter**  
+- Icona brand convertita in **SVG** e ottimizzata  
 - Nessuna dipendenza esterna o framework: codice leggero, sostenibile e facilmente aggiornabile
 
 ---
