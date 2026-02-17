@@ -54,7 +54,7 @@ Sezioni tematiche:
 - **Hero section** con logo BF S.p.A. e link al download del report più recente
 - **Indicatori di sostenibilità 2023** (Emissioni, Acqua, Energia)
 - **Chi siamo**, sezione con una breve introduzione della realtà dell'azienda
-- **Struttura societaria**, rappresentante le società partecipate specializzate che formano il modello multi-business del gruppo
+- **Struttura societaria**, rappresentante alcune delle società partecipate specializzate che formano il modello multi-business del gruppo
 - **Download diretto dei report DNF 2018–2023**
 
 Design responsive  
